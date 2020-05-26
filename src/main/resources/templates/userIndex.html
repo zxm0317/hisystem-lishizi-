@@ -1,0 +1,161 @@
+<html>
+<head>
+<base href="<%=basePath %>" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div style="width: 100%;height: 300px;background:url('images/index/dd.jpg');background-repeat:no-repeat;background-size:100% 100%;" align="center">
+<br><br><br><br><br><br><br><br>
+ <table width="100px" >
+  <tr>
+   <td><input type="text" name=""style="height: 35px;width: 300px"> </td>
+   <td><input type="submit" value="查询" style="height: 40px;width:80px"> </td>
+  </tr>
+ </table>
+</div>
+
+<div style="width: 100%;height: 35px;background:#D693A4">
+ <table width="100%" height="35px">
+  <tr align="center">
+   <td id="aa" style="background-color: red"> 急诊科</td>
+   <td id="bb">内科</td>
+   <td id="cc">外科</td>
+   <td>妇产科</td>
+   <td>皮肤科</td>
+   <td>口腔科</td>
+   <td>五官科</td>
+  </tr>
+ </table>
+</div>
+<div id="aadiv" style="width: 100%;height:200px;">
+ <table width="400px">
+  <tr>
+   <td>
+   <a href="doctorDetail/张医生">
+     <table >
+       <tr>
+       <td><img alt="" src="images/index/tt1.png" style="width: 80px;height: 100px;float: right;"></td>
+      </tr>
+      <tr>
+       <td>张玉东医生</td>
+      </tr>
+     </table>
+     </a>
+   </td>
+   <td>
+     <table >
+       <tr>
+       <td><img alt="" src="images/index/tt2.png" style="width: 80px;height: 100px;float: right;"></td>
+      </tr>
+      <tr>
+       <td>唐点词医生</td>
+      </tr>
+     </table>
+   </td>
+   <td>
+     <table >
+       <tr>
+       <td><img alt="" src="images/index/tt3.png" style="width: 80px;height: 100px;float: right;"></td>
+      </tr>
+      <tr>
+       <td>李师打医生</td>
+      </tr>
+     </table>
+   </td>
+  </tr>
+</table>
+</div>
+<div id="bbdiv" style="width: 100%;height:200px;display:none;">
+ <table width="250px">
+  <tr>
+   <td>
+     <table >
+       <tr>
+       <td><img alt="" src="images/index/tt7.png" style="width: 80px;height: 100px;float: right;"></td>
+      </tr>
+      <tr>
+       <td>唐思思医生</td>
+      </tr>
+     </table>
+   </td>
+   <td>
+     <table >
+       <tr>
+       <td><img alt="" src="images/index/tt6.png" style="width: 80px;height: 100px;float: right;"></td>
+      </tr>
+      <tr>
+       <td>张雨婷医生</td>
+      </tr>
+     </table>
+   </td>
+  </tr>
+</table>
+</div>
+<div id="ccdiv" style="width: 100%;height:200px;display:none;">
+ <table width="400px">
+  <tr>
+   <td>
+     <table >
+       <tr>
+       <td><img alt="" src="images/index/tt4.png" style="width: 80px;height: 100px;float: right;"></td>
+      </tr>
+      <tr>
+       <td>李冬冬医生</td>
+      </tr>
+     </table>
+   </td>
+   <td>
+     <table >
+       <tr>
+       <td><img alt="" src="images/index/tt10.png" style="width: 80px;height: 100px;float: right;"></td>
+      </tr>
+      <tr>
+       <td>唐流露医生</td>
+      </tr>
+     </table>
+   </td>
+   <td>
+     <table >
+       <tr>
+       <td><img alt="" src="images/index/tt11.png" style="width: 80px;height: 100px;float: right;"></td>
+      </tr>
+      <tr>
+       <td>杨等信医生</td>
+      </tr>
+     </table>
+   </td>
+  </tr>
+</table>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+    $('#aa').click(function() {
+    	$('#aadiv').css("display","block");
+    	$('#bbdiv').css("display","none");
+    	$('#ccdiv').css("display","none");
+    	$('#aa').css("background","red");
+    	$('#bb').css("background","#D693A4");
+    	$('#cc').css("background","#D693A4");
+    	});
+    $('#bb').click(function() {
+    	$('#aadiv').css("display","none");
+    	$('#bbdiv').css("display","block");
+    	$('#ccdiv').css("display","none");
+    	$('#aa').css("background","#D693A4");
+    	$('#bb').css("background","red");
+    	$('#cc').css("background","#D693A4");
+    	});
+    $('#cc').click(function() {
+    	$('#aadiv').css("display","none");
+    	$('#bbdiv').css("display","none");
+    	$('#ccdiv').css("display","block");
+    	$('#aa').css("background","#D693A4");
+    	$('#bb').css("background","#D693A4");
+    	$('#cc').css("background","red");
+    	});
+
+</script>
+</body>
+</html>
